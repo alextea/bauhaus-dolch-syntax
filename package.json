@@ -1,0 +1,15 @@
+{
+  "name": "bauhaus-dolch-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A syntax theme based on the Dolch keycaps and Bauhaus colours",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/alextea/bauhaus-dolch-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

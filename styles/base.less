@@ -1,0 +1,307 @@
+@import "syntax-variables";
+
+atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @syntax-gutter-text-color;
+
+    .line-number {
+      &.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+      }
+
+      &.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+      }
+    }
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @dolch-grey-very-light;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .cursor-line {
+    background-color: @syntax-gutter-background-color-selected;
+  }
+}
+
+
+// Syntax styles
+
+.syntax--comment {
+  color: @dolch-grey-dark;
+}
+
+.syntax--keyword {
+  color: @bauhaus-blue;
+
+  &.syntax--control {
+    color: @bauhaus-red-light;
+  }
+
+  &.syntax--operator {
+    color: @dolch-grey-very-light;
+  }
+
+  &.syntax--other.syntax--special-method {
+    color: @bauhaus-blue;
+  }
+
+  &.syntax--other.syntax--unit {
+    color: @bauhaus-yellow;
+  }
+}
+
+.syntax--storage {
+  color: @dolch-grey-very-light;
+}
+
+.syntax--constant {
+  color: @bauhaus-red-light;
+
+  &.syntax--character.syntax--escape {
+    color: @bauhaus-blue-light;
+  }
+
+  &.syntax--numeric {
+    color: @dolch-grey-light;
+  }
+
+  &.syntax--other.syntax--color {
+    color: @bauhaus-yellow;
+  }
+
+  &.syntax--other.syntax--symbol {
+    color: @bauhaus-red-light;
+  }
+}
+
+.syntax--variable {
+  color: @bauhaus-blue;
+
+  &.syntax--interpolation {
+    color: @bauhaus-blue-dark;
+  }
+
+  &.syntax--parameter.syntax--function {
+    color: @bauhaus-green;
+  }
+}
+
+.syntax--invalid.syntax--illegal {
+  background-color: @bauhaus-red;
+  color: @syntax-background-color;
+}
+
+.syntax--string {
+  color: @dolch-grey-very-light;
+
+
+  &.syntax--regexp {
+    color: @bauhaus-blue-light;
+
+    .syntax--source.syntax--ruby.syntax--embedded {
+      color: @bauhaus-orange;
+    }
+  }
+
+  &.syntax--other.syntax--link {
+    color: @bauhaus-red;
+  }
+}
+
+.syntax--punctuation {
+  &.syntax--definition {
+    &.syntax--comment {
+      color: @dolch-grey-light;
+    }
+
+    &.syntax--string,
+    &.syntax--variable,
+    &.syntax--parameters,
+    &.syntax--array {
+      color: @bauhaus-yellow;
+    }
+    &.syntax--function {
+      color: @dolch-grey-very-light;
+    }
+
+    &.syntax--heading,
+    &.syntax--identity {
+      color: @bauhaus-blue;
+    }
+
+    &.syntax--bold {
+      color: @bauhaus-orange-light;
+      font-weight: bold;
+    }
+
+    &.syntax--italic {
+      color: @bauhaus-purple-light;
+      font-style: italic;
+    }
+  }
+
+  &.syntax--section.syntax--embedded {
+    color: @bauhaus-orange;
+  }
+
+}
+
+.syntax--support {
+  &.syntax--class {
+    color: @bauhaus-yellow;
+  }
+
+  &.syntax--function  {
+    color: @bauhaus-red-light;
+
+    &.syntax--any-method {
+      color: @bauhaus-red-light;
+    }
+  }
+}
+
+.syntax--entity {
+  &.syntax--name.syntax--function {
+    color: @bauhaus-blue-light;
+  }
+  &.syntax--name.syntax--type {
+    color: @bauhaus-orange-light;
+    text-decoration: underline;
+  }
+
+  &.syntax--other.syntax--inherited-class {
+    color: @bauhaus-blue-light;
+  }
+  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
+    color: @bauhaus-yellow;
+  }
+
+  &.syntax--name.syntax--section {
+    color: @bauhaus-blue-light;
+  }
+
+  &.syntax--name.syntax--tag {
+    color: @bauhaus-red-light;
+  }
+
+  &.syntax--other.syntax--attribute-name {
+    color: @bauhaus-blue-light;
+
+    &.syntax--id {
+      color: @bauhaus-yellow;
+    }
+  }
+}
+
+.syntax--meta {
+  &.syntax--class {
+    color: @bauhaus-yellow;
+  }
+
+  &.syntax--link {
+    color: @bauhaus-orange-light;
+  }
+
+  &.syntax--require {
+    color: @bauhaus-blue;
+  }
+
+  &.syntax--selector {
+    color: @bauhaus-red;
+  }
+
+  &.syntax--separator {
+    background-color: @dolch-black-dark;
+    color: @syntax-text-color;
+  }
+}
+
+.syntax--none {
+  color: @syntax-text-color;
+}
+
+.syntax--markup {
+  &.syntax--bold {
+    color: @bauhaus-red-light;
+    font-weight: bold;
+  }
+
+  &.syntax--changed {
+    color: @bauhaus-blue-light;
+  }
+
+  &.syntax--deleted {
+    color: @bauhaus-red-light;
+  }
+
+  &.syntax--italic {
+    color: @bauhaus-blue-light;
+    font-style: italic;
+  }
+
+  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+    color: @bauhaus-blue-light;
+  }
+
+  &.syntax--inserted {
+    color: @bauhaus-green-light;
+  }
+
+  &.syntax--list {
+    color: @bauhaus-red-dark;
+  }
+
+  &.syntax--quote {
+    color: @bauhaus-orange;
+  }
+
+  &.syntax--raw.syntax--inline {
+    color: @bauhaus-green-dark;
+  }
+}
+
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+  &.syntax--heading {
+    color: @bauhaus-yellow;
+  }
+}
+
+
+// Mini editor
+
+atom-text-editor[mini] .scroll-view {
+  padding-left: 1px;
+}
