@@ -63,10 +63,10 @@ atom-text-editor {
 }
 
 .syntax--keyword {
-  color: @bauhaus-blue;
+  color: @neon-blue;
 
   &.syntax--control {
-    color: @bauhaus-red-light;
+    color: @neon-pink;
   }
 
   &.syntax--operator {
@@ -74,11 +74,11 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--special-method {
-    color: @bauhaus-blue;
+    color: @neon-blue;
   }
 
   &.syntax--other.syntax--unit {
-    color: @bauhaus-yellow;
+    color: @neon-yellow;
   }
 }
 
@@ -87,10 +87,10 @@ atom-text-editor {
 }
 
 .syntax--constant {
-  color: @bauhaus-red-light;
+  color: @neon-pink;
 
   &.syntax--character.syntax--escape {
-    color: @bauhaus-blue-light;
+    color: @neon-blue;
   }
 
   &.syntax--numeric {
@@ -98,16 +98,16 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--color {
-    color: @bauhaus-yellow;
+    color: @neon-yellow;
   }
 
   &.syntax--other.syntax--symbol {
-    color: @bauhaus-red-light;
+    color: @neon-pink;
   }
 }
 
 .syntax--variable {
-  color: @bauhaus-blue;
+  color: @neon-blue;
 
   &.syntax--interpolation {
     color: @bauhaus-blue-dark;
@@ -128,7 +128,7 @@ atom-text-editor {
 
 
   &.syntax--regexp {
-    color: @bauhaus-blue-light;
+    color: @neon-blue;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @bauhaus-orange;
@@ -141,6 +141,7 @@ atom-text-editor {
 }
 
 .syntax--punctuation {
+  color: @neon-yellow;
   &.syntax--definition {
     &.syntax--comment {
       color: @dolch-cool-grey-light;
@@ -150,15 +151,15 @@ atom-text-editor {
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @bauhaus-yellow;
+      color: @neon-yellow;
     }
     &.syntax--function {
-      color: @dolch-grey-very-light;
+      color: @neon-pink;
     }
 
     &.syntax--heading,
     &.syntax--identity {
-      color: @bauhaus-blue;
+      color: @neon-blue;
     }
 
     &.syntax--bold {
@@ -180,21 +181,22 @@ atom-text-editor {
 
 .syntax--support {
   &.syntax--class {
-    color: @bauhaus-yellow;
+    color: @neon-yellow;
   }
 
   &.syntax--function  {
-    color: @bauhaus-red-light;
+    color: @neon-pink;
 
     &.syntax--any-method {
-      color: @bauhaus-red-light;
+      color: @neon-pink;
     }
   }
 }
 
 .syntax--entity {
+  color: @neon-yellow;
   &.syntax--name.syntax--function {
-    color: @bauhaus-blue-light;
+    color: @neon-blue;
   }
   &.syntax--name.syntax--type {
     color: @bauhaus-orange-light;
@@ -202,32 +204,32 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--inherited-class {
-    color: @bauhaus-blue-light;
+    color: @neon-blue;
   }
   &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
-    color: @bauhaus-yellow;
+    color: @neon-yellow;
   }
 
   &.syntax--name.syntax--section {
-    color: @bauhaus-blue-light;
+    color: @neon-blue;
   }
 
   &.syntax--name.syntax--tag {
-    color: @bauhaus-red-light;
+    color: @neon-pink;
   }
 
   &.syntax--other.syntax--attribute-name {
-    color: @bauhaus-blue-light;
+    color: @neon-blue;
 
     &.syntax--id {
-      color: @bauhaus-yellow;
+      color: @neon-yellow;
     }
   }
 }
 
 .syntax--meta {
   &.syntax--class {
-    color: @bauhaus-yellow;
+    color: @neon-yellow;
   }
 
   &.syntax--link {
@@ -235,7 +237,7 @@ atom-text-editor {
   }
 
   &.syntax--require {
-    color: @bauhaus-blue;
+    color: @neon-blue;
   }
 
   &.syntax--selector {
@@ -254,25 +256,25 @@ atom-text-editor {
 
 .syntax--markup {
   &.syntax--bold {
-    color: @bauhaus-red-light;
+    color: @neon-pink;
     font-weight: bold;
   }
 
   &.syntax--changed {
-    color: @bauhaus-blue-light;
+    color: @neon-blue;
   }
 
   &.syntax--deleted {
-    color: @bauhaus-red-light;
+    color: @neon-pink;
   }
 
   &.syntax--italic {
-    color: @bauhaus-blue-light;
+    color: @neon-blue;
     font-style: italic;
   }
 
   &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
-    color: @bauhaus-blue-light;
+    color: @neon-blue;
   }
 
   &.syntax--inserted {
@@ -295,7 +297,7 @@ atom-text-editor {
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
   &.syntax--heading {
-    color: @bauhaus-yellow;
+    color: @neon-yellow;
   }
 }
 
